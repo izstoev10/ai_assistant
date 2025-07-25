@@ -3,6 +3,7 @@ module github.com/izstoev10/ai_assistant/services/notes
 go 1.23.5
 
 require (
+	github.com/izstoev10/ai_assistant/services/auth v0.0.0-20250725121053-f8f4bc52b852
 	github.com/labstack/echo/v4 v4.13.4
 	google.golang.org/grpc v1.74.2
 	google.golang.org/protobuf v1.36.6
