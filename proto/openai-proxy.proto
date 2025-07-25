@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package openaiproxy;
+
+option go_package = "github.com/izstoev10/my-ai-assistant/services/openai-proxy;openaipb";
+
+service OpenAIProxy {
+  // Client-streaming RPC: send audio chunks, receive final transcript
+  rpc Transcribe(stream AudioChunk) returns (Transcript);
+  // Bidirectional streaming RPC: send user messages, receive AI responses
+  rpc Chat(stream ChatMessage) returns (stream ChatResponse);
+}
+
+// A chunk of raw audio data (e.g., bytes from the browser MediaRecorder)
+message AudioChunk {
+  bytes data = 1;
+}
+
+// Final transcript after all audio is received
+message Transcript {
+  string text = 1;
+}
+
+// A message from the user in a chat session
+message ChatMessage {
+  string user_id = 1;
+  string text = 2;
+}
+
+// A streamed partial or final response from the AI
+message ChatResponse {
+  string text = 1;
+}
+

@@ -1,0 +1,33 @@
+syntax = "proto3";
+package notes;
+
+option go_package = "github.com/izstoev10/ai-assistant/services/notes;notespb";
+
+service Notes {
+  rpc CreateNote(CreateNoteRequest) returns (CreateNoteResponse);
+  rpc ListNotes(ListNotesRequest) returns (ListNotesResponse);
+}
+
+message CreateNoteRequest {
+  string user_id = 1;
+  string content = 2;
+}
+
+message CreateNoteResponse {
+  string note_id = 1;
+}
+
+message ListNotesRequest {
+  string user_id = 1;
+}
+
+message ListNotesResponse {
+  repeated Note notes = 1;
+}
+
+message Note {
+  string id = 1;
+  string user_id = 2;
+  string content = 3;
+  int64 timestamp = 4; // Unix epoch millis
+}
