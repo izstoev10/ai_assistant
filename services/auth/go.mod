@@ -1,4 +1,4 @@
-module github.com/izstoev10/ai-assistant/services/auth
+module github.com/izstoev10/ai_assistant/services/auth
 
 go 1.23.5
 
