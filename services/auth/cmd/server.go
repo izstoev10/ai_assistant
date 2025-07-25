@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	authpb "github.com/izstoev10/ai-assistant/services/auth/auth_grpc"
+	authpb "github.com/izstoev10/ai_assistant/services/auth/auth_grpc"
 	"github.com/labstack/echo/v4"
 )
 

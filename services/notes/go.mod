@@ -1,4 +1,4 @@
-module github.com/izstoev10/ai-assistant/services/notes
+module github.com/izstoev10/ai_assistant/services/notes
 
 go 1.23.5
 

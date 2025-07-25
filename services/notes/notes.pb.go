@@ -295,7 +295,7 @@ const file_notes_proto_rawDesc = "" +
 	"\x05Notes\x12A\n" +
 	"\n" +
 	"CreateNote\x12\x18.notes.CreateNoteRequest\x1a\x19.notes.CreateNoteResponse\x12>\n" +
-	"\tListNotes\x12\x17.notes.ListNotesRequest\x1a\x18.notes.ListNotesResponseB:Z8github.com/izstoev10/ai-assistant/services/notes;notespbb\x06proto3"
+	"\tListNotes\x12\x17.notes.ListNotesRequest\x1a\x18.notes.ListNotesResponseB:Z8github.com/izstoev10/ai_assistant/services/notes;notespbb\x06proto3"
 
 var (
 	file_notes_proto_rawDescOnce sync.Once

@@ -228,7 +228,7 @@ const file_openai_proxy_proto_rawDesc = "" +
 	"\vOpenAIProxy\x12@\n" +
 	"\n" +
 	"Transcribe\x12\x17.openaiproxy.AudioChunk\x1a\x17.openaiproxy.Transcript(\x01\x12?\n" +
-	"\x04Chat\x12\x18.openaiproxy.ChatMessage\x1a\x19.openaiproxy.ChatResponse(\x010\x01BEZCgithub.com/izstoev10/my-ai-assistant/services/openai-proxy;openaipbb\x06proto3"
+	"\x04Chat\x12\x18.openaiproxy.ChatMessage\x1a\x19.openaiproxy.ChatResponse(\x010\x01BEZCgithub.com/izstoev10/my-ai_assistant/services/openai-proxy;openaipbb\x06proto3"
 
 var (
 	file_openai_proxy_proto_rawDescOnce sync.Once

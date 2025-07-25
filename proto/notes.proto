@@ -1,7 +1,7 @@
 syntax = "proto3";
 package notes;
 
-option go_package = "github.com/izstoev10/ai-assistant/services/notes;notespb";
+option go_package = "github.com/izstoev10/ai_assistant/services/notes;notespb";
 
 service Notes {
   rpc CreateNote(CreateNoteRequest) returns (CreateNoteResponse);

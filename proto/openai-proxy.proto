@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package openaiproxy;
 
-option go_package = "github.com/izstoev10/my-ai-assistant/services/openai-proxy;openaipb";
+option go_package = "github.com/izstoev10/my-ai_assistant/services/openai-proxy;openaipb";
 
 service OpenAIProxy {
   // Client-streaming RPC: send audio chunks, receive final transcript

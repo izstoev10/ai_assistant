@@ -1,4 +1,4 @@
-module github.com/izstoev10/ai-assistant/services/openai-proxy
+module github.com/izstoev10/ai_assistant/services/openai-proxy
 
 go 1.23.5
 

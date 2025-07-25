@@ -27,11 +27,12 @@ proto:
 	  echo "  • $$svc"; \
 	  protoc \
 	    --proto_path=$(PROTO_DIR) \
-	    --go_out=services/$$svc \
-	    --go-grpc_out=services/$$svc \
+	    --go_out=paths=source_relative:services/$$svc \
+	    --go-grpc_out=paths=source_relative:services/$$svc \
 	    $(PROTO_DIR)/$$svc.proto; \
 	done
 	@echo "✅ Protobuf generation complete."
+
 
 run:
 	@echo "🚀 Starting services (Ctrl-C to stop)…"
